@@ -3,37 +3,89 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Demo of component-name Web Component" />
-    <title>component-name Web Component Demo</title>
+    <meta name="description" content="Demo of bluesky-replies Web Component" />
+    <title>bluesky-replies Web Component Demo</title>
 
-    <script type="module" src="component-name.js"></script>
+    <style>
+      :root {
+        font-family: system-ui;
+      }
+
+      bluesky-post:not(:defined) figure,
+      bluesky-post:defined > a {
+        display: none;
+      }
+
+      bluesky-post {
+        display: block;
+        max-inline-size: max-content;
+      }
+
+      bluesky-replies ul {
+        padding: 0 0 1rem;
+      }
+
+      bluesky-post blockquote {
+        margin: 0 0 1rem;
+        border-inline-start: 2px solid currentColor;
+        padding-inline-start: 1rem;
+      }
+
+      bluesky-post figure {
+        margin: 0;
+      }
+
+      bluesky-post figcaption,
+      bluesky-post dl {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        gap: 1rem;
+      }
+
+      bluesky-post dl {
+        justify-content: end;
+        gap: 0.25rem;
+        margin-inline-start: auto;
+      }
+
+      bluesky-post dt {
+        margin-inline-start: 1rem;
+      }
+
+      bluesky-post dd {
+        margin-inline-start: 0;
+      }
+    </style>
+
+    <script type="module" src="bluesky-replies.js"></script>
+    <script
+      type="module"
+      src="https://daviddarnes.github.io/bluesky-post/bluesky-post.js"
+    ></script>
   </head>
   <body>
     <h2>General usage example</h2>
-    <component-name>
-      <button>Button</button>
-    </component-name>
+
+    <bluesky-replies>
+      <a href="https://bsky.app/profile/darn.es/post/3laucrkat3s2c">
+        Discuss on Bluesky
+      </a>
+    </bluesky-replies>
+
     <hr />
-    <h2>Example using a fallback method</h2>
-    <component-name>
-      <button>Button</button>
-      <a href="#">Anchor</a>
-    </component-name>
-    <style>
-      component-name:not(:defined) button,
-      component-name:defined a {
-        display: none;
-      }
-    </style>
-    <hr />
-    <h2>Example using options or additional fallback method</h2>
-    <component-name attribute="value">
-      <button>Button</button>
-    </component-name>
-    <style>
-      component-name[attribute="value"] {
-        outline: 1px solid red;
-      }
-    </style>
+    <h2>
+      Example usage combined with
+      <code>bluesky-post</code>
+    </h2>
+
+    <bluesky-replies>
+      <bluesky-post>
+        <a href="https://bsky.app/profile/darn.es/post/3laucrkat3s2c">
+          Discuss on Bluesky
+        </a>
+      </bluesky-post>
+    </bluesky-replies>
   </body>
 </html>

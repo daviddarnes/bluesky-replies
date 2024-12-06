@@ -31,14 +31,14 @@ class BlueskyReplies extends HTMLElement {
 
     this.renderSlots(replies);
 
-    const { slots } = this;
-
-    const replySlots = slots.filter((slot) => slot.dataset.key === "reply");
+    const replySlots = this.slots.filter(
+      (slot) => slot.dataset.key === "reply"
+    );
 
     replySlots.map((replySlot, index) => {
       let data = replies[index].post;
 
-      const postSlots = slots.filter(
+      const postSlots = this.slots.filter(
         (slot) => replySlot.contains(slot) && slot !== replySlot
       );
 

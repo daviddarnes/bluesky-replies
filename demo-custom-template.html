@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demo of bluesky-post Web Component" />
+    <title>bluesky-post Web Component Demo</title>
+
+    <script type="module" src="bluesky-replies.js"></script>
+  </head>
+  <body>
+    <h2>Custom template example</h2>
+
+    <template id="bluesky-replies-template">
+      <ul>
+        <li data-key="reply">
+          <details>
+            <summary data-key="author.handle"></summary>
+            <span data-key="record.text"></span>
+          </details>
+        </li>
+      </ul>
+    </template>
+
+    <bluesky-replies>
+      <a href="https://bsky.app/profile/darn.es/post/3laucrkat3s2c">
+        Discuss on Bluesky
+      </a>
+    </bluesky-replies>
+
+    <hr />
+
+    <h2>Custom template example using <code>template</code> attribute</h2>
+
+    <template id="custom-template">
+      <ul>
+        <li data-key="reply">
+          <strong data-key="author.displayName"></strong>
+          <span data-key="record.text"></span>
+        </li>
+      </ul>
+    </template>
+
+    <bluesky-replies template="custom-template">
+      <a href="https://bsky.app/profile/darn.es/post/3laucrkat3s2c">
+        Discuss on Bluesky
+      </a>
+    </bluesky-replies>
+  </body>
+</html>
