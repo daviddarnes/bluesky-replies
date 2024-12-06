@@ -12,7 +12,7 @@ General usage example:
 <script type="module" src="bluesky-replies.js"></script>
 
 <bluesky-replies>
-  <a href="https://bsky.app/profile/darn.es/post/3l7m6ivb6ha2q">
+  <a href="https://bsky.app/profile/darn.es/post/3laucrkat3s2c">
     Discuss on Bluesky
   </a>
 </bluesky-replies>
@@ -50,7 +50,7 @@ Example using a custom template:
 </template>
 
 <bluesky-replies>
-  <a href="https://bsky.app/profile/darn.es/post/3l7m6ivb6ha2q">
+  <a href="https://bsky.app/profile/darn.es/post/3laucrkat3s2c">
     Discuss on Bluesky
   </a>
 </bluesky-replies>
@@ -144,7 +144,7 @@ You can also use different templates on the same page by using the `template` at
 </template>
 
 <bluesky-replies template="custom-template">
-  <a href="https://bsky.app/profile/darn.es/post/3l7m6ivb6ha2q">
+  <a href="https://bsky.app/profile/darn.es/post/3laucrkat3s2c">
     Discuss on Bluesky
   </a>
 </bluesky-replies>
