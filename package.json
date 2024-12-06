@@ -1,7 +1,7 @@
 {
   "name": "@daviddarnes/bluesky-replies",
   "version": "1.0.0",
-  "description": "A Web Component for…",
+  "description": "A Web Component to display Bluesky post replies",
   "main": "bluesky-replies.js",
   "scripts": {
     "start": "npx http-server ."

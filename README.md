@@ -1,6 +1,6 @@
 # `bluesky-replies`
 
-A Web Component to display Bluesky post replies
+A Web Component to display Bluesky post replies.
 
 **[Demo](https://daviddarnes.github.io/bluesky-replies/demo.html)** | **[Further reading](https://darn.es/bluesky-replies-web-component/)**
 
