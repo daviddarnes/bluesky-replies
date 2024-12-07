@@ -64,7 +64,7 @@ This Web Component allows you to:
 - Surface reply metadata alongside the reply, e.g. reply count, repost count, like count
 - Use a custom template for all instances of the component on the page using a `data-key="name"` data attributes
 - Use a custom template for specific instances using the `template` attribute
-- Retrieve nested data using the `data-key` attribute and typical JavaScript key referencing, e.g. `data-key="reocrd.text"`
+- Retrieve nested data using the `data-key` attribute and typical JavaScript key referencing, e.g. `data-key="record.text"`
 
 ## Installation
 
